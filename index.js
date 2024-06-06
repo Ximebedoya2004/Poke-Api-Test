@@ -7,15 +7,30 @@
 
 // Selectores para el Pokemon 1
 
+const pokemon1Img = document.querySelector('.pokemon-1__img');
+const pokemon1Hp = document.querySelector('.pokemon-1__hp');
+const pokemon1Name = document.querySelector('.pokemon-1__name');
+const pokemon1Attack = document.querySelector('.pokemon-1__attack');
+const pokemon1Defense = document.querySelector('.pokemon-1__defense');
+const pokemon1Type = document.querySelector('.pokemon-1__type');
 
 // Selectores para el Pokemon 2
 
+const pokemon2Img = document.querySelector('.pokemon-2__img');
+const pokemon2Hp = document.querySelector('.pokemon-2__hp');
+const pokemon2Name = document.querySelector('.pokemon-2__name');
+const pokemon2Attack = document.querySelector('.pokemon-2__attack');
+const pokemon2Defense = document.querySelector('.pokemon-2__defense');
+const pokemon2Type = document.querySelector('.pokemon-2__type');
 
 // 2️⃣. Miremos ahora la API de Pokemon :)
 // - Haz un llamado a la URL https://pokeapi.co/api/v2/pokemon/ y analiza cómo devuelve su respuesta
 // La API retorna un pokemon https://pokeapi.co/api/v2/pokemon/{ID} si se provee un ID al final.
 // 🤓 Pista: Para enfrentar 2 pokemones aleatores, necesitamos hacer 2 llamados a la API con 2 n´¨úmeros aleatorios entre el 1 y el 900
 
+function getRandomPokemonId() {
+    return Math.floor(Math.random() * 900) + 1;
+  }
 
 // 3️⃣ - Crear una función que genere un número random entre 1 y 900.
 // Puedes usar esta: 👩🏻‍💻
